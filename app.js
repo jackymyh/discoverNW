@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const port = process.env.PORT || 8080;
+const fs = require('fs');
+
 app.use(express.static(__dirname + '/front-end'));
-var fs = require('fs');
 
 var getLibraryInfo = function(request, response)
 {
@@ -49,6 +51,6 @@ app.get('/parks', getParkInfo);
 app.get('/grey-marker.png', getGreyMarker);
 app.get('/red-marker.png', getRedMarker);
 
-app.listen(8080, function () {
+app.listen(port, function () {
     console.log('The server is listening on port 8080!')
 });
