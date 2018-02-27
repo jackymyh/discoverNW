@@ -5,6 +5,7 @@ App deployed to Heroku: https://discover-hackathon.herokuapp.com/
 
 ## To run the app:
 Have npm and node installed
+
 Go inside the project folder
 ```
 npm install
