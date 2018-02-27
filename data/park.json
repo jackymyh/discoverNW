@@ -1,0 +1,74 @@
+{
+  "parks": [
+    {
+      "name": "Barnet Marine Park",
+      "location": "8181 Barnet Road",
+      "position" : "49.2904025,-123.0652427"
+    },
+    {
+      "name": "Fraser Foreshore Park",
+      "location": "7751 Fraser Park Drive",
+      "position": "49.1925934,-123.0016563"
+    },
+    {
+      "name": "Burnaby Lake Regional Nature Park",
+      "location": "4519 Piper Avenue",
+      "position": "49.2447473,-122.9574342"
+    },
+    {
+      "name": "Central Park",
+      "location": "3883 Imperial Street",
+      "position": "49.2219525,-123.0337233"
+    },
+    {
+      "name": "Deer Lake Park",
+      "location": "6450 Deer Lake Avenue",
+      "position": "49.2356349,-122.9816739"
+    },
+    {
+      "name": "Burnaby Mountain Conservation Area",
+      "location": "800 Burnaby Mountain Parkway",
+      "position": "49.2842624,-122.9341078"
+    },
+    {
+      "name": "Burrard Inlet Conservation Area",
+      "location": "151 Cliff Ave",
+      "position": "49.285856,-122.961088"
+    },
+    {
+      "name": "Capitol Hill Reservoir Park",
+      "location": "229 N Hythe Ave",
+      "position": "49.2872534,-122.9933184"
+    },
+    {
+      "name": "Kaymar Creek Ravine Park",
+      "location": "8190 Boundary Road",
+      "position": "49.2099918,-123.0182265"
+    },
+    {
+      "name": "Byrne Creek Ravine Park",
+      "location": "6555 Byrne Park Drive",
+      "position": "49.2117256,-122.967812"
+    },
+    {
+      "name": "Eagle Creek Ravine Park",
+      "location": "7740 Broadway",
+      "position": "49.2598399,-122.9417967"
+    },
+    {
+      "name": "Froggers Creek Ravine Park",
+      "location": "4994 Carson Street",
+      "position": "49.2089231,-122.9938458"
+    },
+    {
+      "name": "Kaymar Creek Ravine Park",
+      "location": "8050 Kaymar Dr",
+      "position": "49.2103771,-123.0192239"
+    },
+    {
+      "name": "Montrose Park",
+      "location": "3751 Montrose Street",
+      "position": "49.2883101,-123.0336475"
+    }
+  ]
+}

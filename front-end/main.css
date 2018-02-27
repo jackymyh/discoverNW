@@ -1,0 +1,142 @@
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+#map {
+    height: 100%;
+}
+
+#mapView {
+    height: 70%;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+#user-input, #candidate-choose, #display-result {
+    height: 30%;
+    overflow: scroll;
+    background-color: #809092;
+}
+
+#display-result {
+    color: #e7f0fd;
+    padding-top: 1em;
+}
+
+#result-info {
+  padding-left: 3em;
+}
+
+ .input-form {
+    background-color: #809092;
+    border:none;
+    border-bottom: 1px solid #d5ddd4;
+    width: 100%;
+}
+
+h5 {
+  text-transform: uppercase;
+}
+
+.input-form:focus {
+    border:none;
+    border-bottom: 1px solid #d5ddd4;
+}
+
+.input-form {
+  color: #d5ddd4;
+}
+
+::placeholder {
+    color: #e7f0fd;
+}
+
+#search-btn {
+    background-color: #809092;
+    color: #d5ddd4;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-right: 1em;
+}
+
+input[type=text] {
+    background-color: #809092;
+    color: #d5ddd4;
+}
+
+#mapViewSub {
+    padding: 0;
+}
+
+form select{
+    margin-top:10px;
+    color:#e7f0fd;
+    background: transparent;
+    border: none;
+}
+
+form option{
+  background-color: #809092;
+}
+
+.check-box {
+    background-color: #809092;
+    color: #e7f0fd;
+}
+
+input[type=text] {
+    background-color: #809092;
+    color: #e7f0fd;
+}
+
+.candidate-label {
+    margin-left: 5px;
+    height: 80%;
+    padding: 0;
+}
+
+#route-button {
+    margin-top: 3em;
+    margin-right: 20px;
+    color: #e7f0fd;
+}
+
+#candidate-wrapper {
+  margin-top: 1.5em;
+  margin-left: 0.5em;
+}
+
+#back-btn {
+  padding-top: 4em;
+}
+
+#back-btn2 {
+  padding-top: 2em;
+}
+
+.adp-text, .adp-substep, .adp-summary, .adp-stepicon, .adp-legal {
+    color: #e7f0fd;
+}
+
+.adp-details, .adp-legal {
+    color: #e7f0fd;
+}
+
+tbody {
+    background-color: #809092;
+}
+
+.page-label {
+    height: 20px;
+    color: #e7f0fd;
+    font-size: large;
+}

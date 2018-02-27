@@ -1,0 +1,24 @@
+{
+  "libraries": [
+    {
+      "name": "Burnaby Public Library, McGill Branch",
+      "location": "McGill 4595 Albert Street",
+      "position" : "49.2827106,-123.002774"
+    },
+    {
+      "name": "Burnaby Public Library, Cameron Branch",
+      "location": "9523 Cameron Street",
+      "position": "49.2538521,-122.8995535"
+    },
+    {
+      "name": "Burnaby Public Library, Bob Prittie Metrotown Branch",
+      "location": "6100 Willingdon Avenue",
+      "position": "49.228304,-123.0077577"
+    },
+    {
+      "name": "Burnaby Public Library, Tommy Douglas Library",
+      "location": "7311 Kinsway Street",
+      "position": "49.2189164,-122.9546472"
+    }
+  ]
+}

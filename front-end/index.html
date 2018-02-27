@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0,
+     minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-title" content="onlyWebPro"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <title>DiscoverNW</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row" id="mapView">
+        <div class="col-sm-12" id="mapViewSub">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <div class="row" id="user-input">
+        <div class="col-8 offset-1 page-label" style="padding-top:0.5em;">
+            <h5><b>Option Setting</b></h5>
+        </div>
+        <div class="col-8 offset-1">
+            <input id="autocompleteFrom" class="input-form" placeholder="Origin"  type="text" style="margin-top: 10px"></input>
+            <input id="autocompleteTo" class="input-form" placeholder="Destination" type="text" style="margin-top: 10px"></input>
+            <input id="hourEstimate" class="input-form" placeholder="Time Available In Hours" type="number" style="margin-top: 10px"></input>
+            <form class="input-form" id="transModeForm">
+                <select id="transMode">
+                    <option value="WALKING">Walking</option>
+                    <option value="BICYCLING">Bicycling</option>
+                    <option value="TRANSIT">Transit</option>
+                    <option value="DRIVING">Driving</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="col-3">
+            <button type="button" class="btn btn-default" id="search-btn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="row" id="candidate-choose">
+        <div class="col-2">
+            <button id="back-btn" class="btn btn-default btn-lg check-box" onclick="switchView(0)">
+                <i class="fa fa-arrow-left" style="font-size:20px;"></i>
+            </button>
+        </div>
+        <div class="col-6">
+            <div class="col-12 page-label" style="padding-top:0.5em;right:10px;">
+                <h5><b>Waypoints</b></h5>
+            </div>
+
+            <div id="candidate-wrapper">
+                <div class="candidate">
+                    <button type="button" id="library-check-btn" class="btn btn-default btn-xs check-box" style="padding:0;">
+                        <i class="fa fa-check-square"></i>
+                        <label class="candidate-label">Library</label>
+                    </button>
+                </div>
+
+                <div class="candidate">
+                    <button type="button" id="park-check-btn" class="btn btn-default btn-xs check-box" style="padding:0;">
+                        <i class="fa fa-check-square"></i>
+                        <label class="candidate-label">Park</label>
+                    </button>
+                </div>
+
+                <div class="candidate">
+                    <button type="button" id="restaurant-check-btn" class="btn btn-default btn-xs check-box" style="padding:0;">
+                        <i class="fa fa-square"></i>
+                        <label class="candidate-label">Restaurant</label>
+                    </button>
+                </div>
+
+                <div class="candidate">
+                    <button type="button" id="activity-check-btn" class="btn btn-default check-box" style="padding:0;">
+                        <i class="fa fa-square"></i>
+                        <label class="candidate-label">Activity</label>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <button id="route-button" class="btn btn-default btn-lg check-box" onclick="switchView(2)">
+                <i class="fa fa-rocket"></i> <h5>Route</h5>
+            </button>
+        </div>
+    </div>
+
+    <div class="row" id="display-result">
+        <div class="col-2">
+            <button id="back-btn2" class="btn btn-default btn-lg check-box" onclick="switchView(1)">
+                <i class="fa fa-arrow-left" style="font-size: 20px"></i>
+            </button>
+        </div>
+
+        <div class="col-10" id="result-info">
+            <p><strong>Total Distance: </strong><span id="total-dist"></span></p>
+            <p><strong>Time Cost: </strong><span id="total-time"></span></p>
+            <p><strong>Time Spare: </strong><span id="total-time-spare"></span></p>
+        </div>
+
+        <div id="right-panel"></div>
+    </div>
+
+</div>
+
+<script src="jquery-3.1.1.js"></script>
+<script src="form.js"></script>
+<script src="interaction.js"></script>
+<script src="location.js"></script>
+<script src="index.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxNuQOTlDI4Td_97Wsq8pcUhyFDpIDhyg&libraries=places&callback=initMap"></script>
+</body>
+</html>
